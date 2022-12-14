@@ -42,20 +42,26 @@
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
-                </div>
-                <div class="form-control">
+            </div>
+            <div class="form-control">
                 <label>
                     Направление:
                     <select name="specialization" required>
-                      <option value="frontend" selected>Фронтенд</option>
-                      <option value="backend">Бекэнд</option>
-                      <option value="mobile">Мобайл</option>
-                      <option value="other">Другая</option>
+                        <option value="frontend" selected>Фронтенд</option>
+                        <option value="backend">Бекэнд</option>
+                        <option value="mobile">Мобайл</option>
+                        <option value="other">Другая</option>
                     </select>
-                  </label>
+                </label>
             </div>
             <button>Записаться</button>
         </form>
+    </div>
+    <div class="container-color">
+        <label>Меняем фон на другой, но пока полный отстой:</label>
+        <button type="button" onclick="changeBodyBg('pink');">Розовый</button>
+        <button type="button" onclick="changeBodyBg('lightgray');">Серый</button>
+        <button type="button" onclick="changeBodyBg('brown');">Коричневый</button>
     </div>
     <script src="./js/main.js"></script>
     <script src="https://kit.fontawesome.com/dc5872213c.js" crossorigin="anonymous"></script>

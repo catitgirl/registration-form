@@ -11,6 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
   margin: 0;
 }
@@ -105,4 +106,8 @@ body {
   width: 190px;
   height: 40px;
   font-size: 18px;
+}
+
+.container-color {
+  padding-top: 20px;
 }/*# sourceMappingURL=style.css.map */
