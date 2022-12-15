@@ -3,16 +3,16 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
+const formAdd = true;
+
 
 form.addEventListener('submit', e => {
     e.preventDefault();
 
     const passedChecks = checkInputs();
 
-    if (passedChecks) {
-        alert('Привет');
-    }
 });
+
 
 function checkInputs() {
     const usernameValue = username.value.trim();
@@ -47,6 +47,12 @@ function checkInputs() {
     } else {
         setSuccessFor(password2);
     }
+    document.getElementById('success').innerHTML = "";
+    if (formAdd==true) {
+        document.getElementById('success').innerHTML += ('Добро пожаловать, ' + usernameValue);
+       
+    }
+    
 }
 
 function setErrorFor(input, message) {
@@ -65,7 +71,7 @@ function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
-function changeBodyBg(color){
+function changeBodyBg(color) {
     document.body.style.background = color;
 }
 
